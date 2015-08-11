@@ -1,5 +1,9 @@
 .home {
   &.index {
-    /* Some style */
+    background-image: image-url('lattice-trek-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
