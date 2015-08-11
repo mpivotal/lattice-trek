@@ -1,0 +1,22 @@
+== Pivotal UI Rails Boilerplate
+
+This boilerplate app comes with Pivotal UI v1.6.0
+
+=== Getting started
+
+* Clone this repo
+
+* Be sure to run `bundle` in the app directory
+
+* Start with `foreman start`
+
+* Open http://localhost:5000 in your web browser
+
+=== Deploying
+* Sign up for a Pivotal Web Services account at http://run.pivotal.io
+
+* Rename manifest.sample.yml and add your CF app details
+
+* Deploy with `cf push`
+
+Visit http://styleguide.cfapps.io for more information.
