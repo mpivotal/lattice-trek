@@ -10,71 +10,66 @@
     %tr
       %th Component
       %th System Status
-  %tbody
-    %tr
+  %tbody.components
+    %tr.component.reactor
       %td.txt-c
         = image_tag 'reactor-icon.png', width: 96, class: 'mvxl'
         .h2.em-low.pan.man
           Reactor
       %td.txt-m
-        .type-error-1
-          .label.label-primary.bg-error-1{ style: 'font-size: 1em;'}
-            Cannot Connect
+        .label.label-primary.bg-null-1{ style: 'font-size: 1em;'}
+          Cannot Connect
         .terminal.mtl
           %pre.type-inverse.bg-dark-1
-            %code
+            %code.message
               Please configure REACTOR_STATUS_ENDPOINT
-    %tr
+    %tr.component.cryo-pod
       %td.txt-c
         = image_tag 'cryo-pod-icon.png', width: 96, class: 'mvxl'
         .h2.em-low.pan.man
           Cryo Pod
       %td.txt-m
-        .type-warn-1
-          .label.label-primary.bg-warn-1{ style: 'font-size: 1em;'}
-            Warning
+        .label.label-primary.bg-warn-1{ style: 'font-size: 1em;'}
+          Warning
         .terminal.mtl
           %pre.type-inverse.bg-dark-1
             %code
               Please configure CRYO_POD_STATUS_ENDPOINT
       
-    %tr
+    %tr.component.commlink
       %td.txt-c
         = image_tag 'commlink-icon.png', width: 96, class: 'mvxl'
         .h2.em-low.pan.man
           Comm Link
       %td.txt-m
-        .type-dark-1
-          .label.label-primary.bg-dark-1{ style: 'font-size: 1em;'}
-            Death
+        .label.label-primary.bg-dark-1{ style: 'font-size: 1em;'}
+          Death
         .terminal.mtl
           %pre.type-inverse.bg-dark-1
             %code
               Please configure COMM_LINK_STATUS_ENDPOINT
 
-    %tr
+    %tr.component.stationkeeping
       %td.txt-c
         = image_tag 'stationkeeping-icon.png', width: 96, class: 'mvxl'
         .h2.em-low.pan.man
           Stationkeeping
       %td.txt-m
-        .type-dark-1
-          .label.label-primary.bg-succes-2{ style: 'font-size: 1em;'}
-            OK
+        .label.label-primary.bg-succes-2{ style: 'font-size: 1em;'}
+          OK
         .terminal.mtl
           %pre.type-inverse.bg-dark-1
             %code
               Please configure STATIONKEEPING_STATUS_ENDPOINT
 
-    %tr
+    %tr.component.science-station
       %td.txt-c
         = image_tag 'science-station-icon.png', width: 96, class: 'mvxl'
         .h2.em-low.pan.man
           Science Station
       %td.txt-m
-        .type-dark-1
-          .label.label-primary.bg-error-1{ style: 'font-size: 1em;'}
-            Cannot Connect
+        .label.label-primary.bg-error-1{ style: 'font-size: 1em;'}
+          Cannot Connect
         .terminal.mtl
           %pre.type-inverse.bg-dark-1
             %code
