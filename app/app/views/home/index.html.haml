@@ -12,21 +12,71 @@
       %th System Status
   %tbody
     %tr
-      %td Reactor
-      %td 
+      %td.txt-c
+        = image_tag 'reactor-icon.png', width: 96, class: 'mvxl'
+        .h2.em-low.pan.man
+          Reactor
+      %td.txt-m
         .type-error-1
-          .label.label-primary.bg-error-1
+          .label.label-primary.bg-error-1{ style: 'font-size: 1em;'}
             Cannot Connect
+        .terminal.mtl
+          %pre
+            %code
+              Please configure CRYO_POD_STATUS_ENDPOINT
     %tr
-      %td Cryo
-      %td
+      %td.txt-c
+        = image_tag 'cryo-pod-icon.png', width: 96, class: 'mvxl'
+        .h2.em-low.pan.man
+          Cryo Pod
+      %td.txt-m
         .type-warn-1
-          .label.label-primary.bg-warn-1
+          .label.label-primary.bg-warn-1{ style: 'font-size: 1em;'}
             Warning
+        .terminal.mtl
+          %pre
+            %code
+              Please configure CRYO_POD_STATUS_ENDPOINT
       
     %tr
-      %td Stationkeeping
-      %td
+      %td.txt-c
+        = image_tag 'stationkeeping-icon.png', width: 96, class: 'mvxl'
+        .h2.em-low.pan.man
+          Stationkeeping
+      %td.txt-m
         .type-dark-1
-          .label.label-primary.bg-dark-1
+          .label.label-primary.bg-dark-1{ style: 'font-size: 1em;'}
             Death
+        .terminal.mtl
+          %pre
+            %code
+              Please configure CRYO_POD_STATUS_ENDPOINT
+
+    %tr
+      %td.txt-c
+        = image_tag 'comm-link-icon.png', width: 96, class: 'mvxl'
+        .h2.em-low.pan.man
+          Comm Link
+      %td.txt-m
+        .type-dark-1
+          .label.label-primary.bg-succes-2{ style: 'font-size: 1em;'}
+            OK
+        .terminal.mtl
+          %pre
+            %code
+              Please configure CRYO_POD_STATUS_ENDPOINT
+
+    %tr
+      %td.txt-c
+        = image_tag 'science-station-icon.png', width: 96, class: 'mvxl'
+        .h2.em-low.pan.man
+          Science Station
+      %td.txt-m
+        .type-dark-1
+          .label.label-primary.bg-error-1{ style: 'font-size: 1em;'}
+            Cannot Connect
+        .terminal.mtl
+          %pre
+            %code
+              Please configure CRYO_POD_STATUS_ENDPOINT
+
