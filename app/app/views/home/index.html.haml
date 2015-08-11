@@ -1,7 +1,29 @@
-%h1
-  .fa.fa-icon.fa-cloud
-  = "#{t('hello')}"
-%p
-  There are
-  %code.type-accent-3.em-high= "#{@time}"
-  seconds until end of day.
+%h1.title
+  .fa.fa-icon.fa-space-shuttle
+  Lattice Trek
+  
+%table.table.table-data.table-light
+  %thead
+    %tr
+      %th Component
+      %th System Status
+  %tbody
+    %tr
+      %td Reactor
+      %td 
+        .type-error-1
+          .label.label-primary.bg-error-1
+            Cannot Connect
+    %tr
+      %td Cryo
+      %td
+        .type-warn-1
+          .label.label-primary.bg-warn-1
+            Warning
+      
+    %tr
+      %td Stationkeeping
+      %td
+        .type-dark-1
+          .label.label-primary.bg-dark-1
+            Death
